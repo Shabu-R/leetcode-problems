@@ -3,7 +3,6 @@ class Solution {
         int left = 0;
         int right = arr.length - 1;
 
-        // shrink window until size = k
         while (right - left + 1 > k) {
             if (Math.abs(arr[left] - x) > Math.abs(arr[right] - x)) {
                 left++;
